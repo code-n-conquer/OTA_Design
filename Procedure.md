@@ -1,0 +1,74 @@
+# OTA Design Procedure
+
+## Step 1: DC Analysis
+
+DC analysis is carried out with appropriate voltage and current parameters to determine the threshold voltage (Vth) and the current gain (β) of the PMOS and NMOS transistors used in the circuit.
+
+## Step 2: Parameter Approximation
+
+The parameters are approximated to values that simplify the calculation process:
+- **μpCox**: 165 µA/V²
+- **μnCox**: 330 µA/V²
+- **Vth**: 0.2 V (for both PMOS and NMOS)
+
+![Parameter Calculation](<im<img width="749" alt="Parameter_Cal" src="https://github.com/user-attachments/assets/20ec0a20-c209-42c7-8249-1072c18e17bf">
+age>)
+
+![DC Analysis](<i<img width="169" alt="Pcal2" src="https://github.com/user-attachments/assets/52f382fc-4c8a-42b0-aa9a-c520f3c603f4">
+mage>)
+![DC Analysis](<ima<img width="106" alt="Pcal3" src="https://github.com/user-attachments/assets/0fdcbbfc-0368-4477-8280-df53a24b80ee">
+ge>)
+![DC Analysis](<imag<img width="265" alt="Pcal4" src="https://github.com/user-attachments/assets/5304414c-4f96-4602-8d93-2274a5652862">
+e>)
+![DC Analysis](<i<img width="104" alt="Pcal5" src="https://github.com/user-attachments/assets/c44ecc29-50fb-4ac1-8fba-d15651d89bfd">
+mage>)
+
+## Step 3: Deciding the DC Current
+
+The DC current for the amplifier is determined based on two constraints:
+- **Lower Limit**: Determined by the Slew Rate.
+- **Upper Limit**: Determined by Power Dissipation (P<sub>diss</sub> = V<sub>dd</sub> * I<sub>d</sub>).
+
+A current of **50 µA** is chosen as it satisfies both constraints.
+
+## Step 4: PMOS Current Mirror Sizing
+
+The width-to-length ratio (W/L) for the PMOS current mirror is selected based on the ICMR+ constraint.
+
+## Step 5: NMOS Transconductance Selection
+
+The transconductance (g<sub>m</sub>) for the NMOS transistor is chosen based on the Unity Gain Frequency (UGF) constraint. The W/L ratio for the NMOS is then calculated using the values of g<sub>m</sub> and I<sub>d</sub>.
+
+## Step 6: NMOS Current Mirror Sizing
+
+The W/L ratio for the NMOS current mirror is determined based on the ICMR- constraint.
+
+## Final W/L Ratios
+
+The finalized W/L ratios are as follows:
+- **W/L (PMOS current mirror)**: 15
+- **W/L (NMOS current mirror)**: 2
+- **W/L (NMOS input pair)**: 10
+
+With these ratios, the DC analysis is performed.
+
+![DC Analysis Result](<im<img width="761" alt="DC_Analysis1" src="https://github.com/user-attachments/assets/b627edbb-a6c9-45c6-a95b-a13c79d34016">
+age>)
+![DC Analysis Result](<ima<img width="761" alt="DC_Plot2" src="https://github.com/user-attachments/assets/eb3a8911-93f5-4c7b-af61-c6fc3329b540">
+ge>)
+
+## AC Analysis
+
+An AC analysis is performed with a frequency sweep ranging from **1 Hz to 10 MHz**.
+
+![AC Analysis Result](<im<img width="845" alt="AC_Plot" src="https://github.com/user-attachments/assets/7c11e3be-5bae-48f7-9acf-fb3ad00a435b">
+age>)
+
+![AC Analysis Result](<im<img width="842" alt="AC_Plot2" src="https://github.com/user-attachments/assets/d4dde307-b320-4aca-826d-7e25ad91c33c">
+age>)
+
+## Optimization and Conclusion
+
+Although there is no upper limit for UGF, increasing the transconductance (g<sub>m</sub>) by adjusting the W/L ratio for the input NMOS pair pushes the transistors out of saturation. 
+
+**Conclusion**: The desired gain of **70 V/V** is not achieved with this amplifier design. However, a gain of **40 V/V** is realized while meeting the other design parameters.

@@ -29,8 +29,8 @@ The **Operational Transconductance Amplifier (OTA) Design Project** focuses on t
 
 ## Project Structure
 
-- **/design**: Contains the image of the schematic developed using Cadence Virtuoso.
-- **/simulation**: Includes circuit diagram with dc operating points and gain plot without frequency sweep and 1Vpp input signal.
+- **/design**: Contains the image(Amplifier.png) as well as the design files(schematic folder) of the schematic developed using Cadence Virtuoso.
+- **/simulation**: Contains circuit diagram with dc operating points and gain plot without frequency sweep and 1Vpp input signal. (see Procedure.md)
 
 ## Tools and Technologies
 

@@ -67,8 +67,11 @@ All transistors are in saturation in both the edge cases.
 
 An AC analysis is performed with a frequency sweep ranging from **1 Hz to 10 MHz**.
 
+<img width="854" alt="AC_Plot4" src="https://github.com/user-attachments/assets/9ca8fc89-846b-4a1f-b9d7-62265126143d">\
+AC analysis carried out at ICMR- = 0.8V, Gain ~= 32dB
 
-
+<img width="852" alt="AC_Plot3" src="https://github.com/user-attachments/assets/78a5aed4-45a2-41db-b538-0729926aa507">\
+AC analysis carried out at ICMR- = 1.6V, Gain ~= 30.8dB
 
 ## Optimization and Conclusion
 
@@ -78,8 +81,12 @@ There is no upper limit for UGF. Hence, increasing the transconductance (g<sub>m
 
 Again, AC analysis is performed with a frequency sweep ranging from **1 Hz to 10 MHz**.
 
-<img width="845" alt="AC_Plot" src="https://github.com/user-attachments/assets/7c11e3be-5bae-48f7-9acf-fb3ad00a435b">
+<img width="842" alt="AC_Plot2" src="https://github.com/user-attachments/assets/d4dde307-b320-4aca-826d-7e25ad91c33c">\
+AC analysis carried out at ICMR- = 0.8V, Gain ~= 34dB
 
-<img width="842" alt="AC_Plot2" src="https://github.com/user-attachments/assets/d4dde307-b320-4aca-826d-7e25ad91c33c">
+<img width="845" alt="AC_Plot" src="https://github.com/user-attachments/assets/7c11e3be-5bae-48f7-9acf-fb3ad00a435b">\
+AC analysis carried out at ICMR- = 0.8V, Gain ~= 32dB
+
+This gives almost 2dB more gain than the previous configurations. So, this is chosen as the final configuration.
 
 **Conclusion**: The desired gain of **70 V/V** is not achieved with this amplifier design. However, a gain of **40 V/V** is realized while meeting the other design parameters.

@@ -55,10 +55,13 @@ The finalized W/L ratios are as follows:
 
 With these ratios, the DC analysis is performed.
 
-<img width="761" alt="DC_Analysis1" src="https://github.com/user-attachments/assets/b627edbb-a6c9-45c6-a95b-a13c79d34016">
+<img width="761" alt="DC_Analysis1" src="https://github.com/user-attachments/assets/b627edbb-a6c9-45c6-a95b-a13c79d34016">\
+DC analysis carried out at ICMR- = 0.8V
 
+<img width="761" alt="DC_Plot2" src="https://github.com/user-attachments/assets/eb3a8911-93f5-4c7b-af61-c6fc3329b540">\
+DC analysis carried out at ICMR- = 1.6V
 
-<img width="761" alt="DC_Plot2" src="https://github.com/user-attachments/assets/eb3a8911-93f5-4c7b-af61-c6fc3329b540">
+All transistors are in saturation in both the edge cases.
 
 ## Initial AC Analysis
 

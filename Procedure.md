@@ -12,19 +12,19 @@ The parameters are approximated to values that simplify the calculation process:
 - **Vth**: 0.2 V (for both PMOS and NMOS)
 
 <img width="749" alt="Parameter_Cal" src="https://github.com/user-attachments/assets/20ec0a20-c209-42c7-8249-1072c18e17bf">\
-Circuit for Paramter Calculation\
+Circuit for Paramter Calculation
 
 <img width="169" alt="Pcal2" src="https://github.com/user-attachments/assets/52f382fc-4c8a-42b0-aa9a-c520f3c603f4">\
-beta effective for pmos\
+beta effective for pmos
 
 <img width="106" alt="Pcal3" src="https://github.com/user-attachments/assets/0fdcbbfc-0368-4477-8280-df53a24b80ee">\
-vth for pmos\
+vth for pmos
 
 <img width="265" alt="Pcal4" src="https://github.com/user-attachments/assets/5304414c-4f96-4602-8d93-2274a5652862">\
-beta effective for nmos\
+beta effective for nmos
 
 <img width="104" alt="Pcal5" src="https://github.com/user-attachments/assets/c44ecc29-50fb-4ac1-8fba-d15651d89bfd">\
-vth for nmos\
+vth for nmos
 
 ## Step 3: Deciding the DC Current
 

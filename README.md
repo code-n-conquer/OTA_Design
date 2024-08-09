@@ -2,9 +2,7 @@
 
 ## Overview
 
-The **Operational Transconductance Amplifier (OTA) Design Project** focuses on the design, simulation, and analysis of a high-performance OTA in the analog domain. OTAs are fundamental building blocks in analog signal processing, used in a wide range of applications such as filters, oscillators, and analog multipliers.
-
-This project uses **Cadence Virtuoso** as the primary design tool and leverages the **GPDK90 technology**. The goal is to design an OTA that meets stringent performance criteria, suitable for integration in various analog circuits.
+The **Operational Transconductance Amplifier (OTA) Design Project** focuses on the design, simulation, and analysis of a high-performance OTA.
 
 ## Design Specifications
 
@@ -25,12 +23,14 @@ This project uses **Cadence Virtuoso** as the primary design tool and leverages 
 - **Linearity**: Excellent linearity is maintained to reduce distortion in the processed signals.
 - **Process Technology**: Implemented using GPDK90 technology, with each transistor having a length of 0.5 µm.
 
+## Shortcomings
+- **Gain Specs not met**: 70 V/V(close to 37 dB) is a very high gain which could not be provided by this amplifier. This amplifier can generate a maximum gain of 48 V/V (33.59 dB) for ICMR- and 40V/V (32 dB) for ICMR+.
+- **Phase Margin**: At this point, phase margin is not included in the design. It will be added soon.
+
 ## Project Structure
 
-- **/design**: Contains the schematic and layout design files developed using Cadence Virtuoso.
-- **/simulation**: Includes simulation scripts, test benches, and results.
-- **/docs**: Documentation detailing the design process, simulation results, and analysis.
-- **/reports**: Final reports and presentations summarizing the project outcomes.
+- **/design**: Contains the image of the schematic developed using Cadence Virtuoso.
+- **/simulation**: Includes circuit diagram with dc operating points and gain plot without frequency sweep and 1Vpp input signal.
 
 ## Tools and Technologies
 

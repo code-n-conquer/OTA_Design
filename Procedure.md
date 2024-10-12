@@ -55,10 +55,10 @@ The finalized W/L ratios are as follows:
 
 With these ratios, the DC analysis is performed.
 
-<img width="761" alt="DC_Analysis1" src="https://github.com/user-attachments/assets/b627edbb-a6c9-45c6-a95b-a13c79d34016">\
+![DC_Analysis_ICMR-](https://github.com/user-attachments/assets/c9316f60-4d74-475b-82e6-0857be49c158)
 DC analysis carried out at ICMR- = 0.8V
 
-<img width="761" alt="DC_Plot2" src="https://github.com/user-attachments/assets/eb3a8911-93f5-4c7b-af61-c6fc3329b540">\
+![DC_Analysis_ICMR+](https://github.com/user-attachments/assets/0c64967e-66cd-4b33-b59a-1b69af92d123)
 DC analysis carried out at ICMR- = 1.6V
 
 All transistors are in saturation in both the edge cases.
@@ -81,11 +81,15 @@ There is no upper limit for UGF. Hence, increasing the transconductance (g<sub>m
 
 Again, AC analysis is performed with a frequency sweep ranging from **1 Hz to 10 MHz**.
 
-<img width="842" alt="AC_Plot2" src="https://github.com/user-attachments/assets/d4dde307-b320-4aca-826d-7e25ad91c33c">\
-AC analysis carried out at ICMR- = 0.8V, Gain ~= 34dB
+![AC_Plot_Gain_ICMR-](https://github.com/user-attachments/assets/3ee44615-cb17-48ac-9d57-a17151fd4898)
 
-<img width="845" alt="AC_Plot" src="https://github.com/user-attachments/assets/7c11e3be-5bae-48f7-9acf-fb3ad00a435b">\
-AC analysis carried out at ICMR- = 0.8V, Gain ~= 32dB
+![AC_Plot_ICMR-](https://github.com/user-attachments/assets/b6a360c3-018e-44d1-bda8-b2e564168523)
+AC analysis carried out at ICMR- = 0.8V, Gain ~= 38dB
+
+![AC_Plot_Gain_ICMR+](https://github.com/user-attachments/assets/daa4d7c1-7283-4c2a-8bee-b70227808412)
+
+![AC_Plot_ICMR+](https://github.com/user-attachments/assets/5d2b4ac4-eacc-412c-991a-6f5bd3a75c53)
+AC analysis carried out at ICMR+ = 1.6V, Gain ~= 37dB
 
 This gives almost 2dB more gain than the previous configurations. So, this is chosen as the final configuration.
 

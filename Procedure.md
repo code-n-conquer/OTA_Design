@@ -75,7 +75,7 @@ AC analysis carried out at ICMR- = 1.6V, Gain ~= 30.8dB
 
 ## Optimization and Conclusion
 
-There is no upper limit for UGF. Hence, increasing the transconductance (g<sub>m</sub>) by adjusting the W/L ratio for the input NMOS pair can be adopted to increase gain of the transistor. For w/l = 20, gain is found to be maximum while all the transistors are maintained in saturation. Further, increasing w/l, pushes the transistors out of saturation. 
+There is no upper limit for UGF. Hence, increasing the transconductance (g<sub>m</sub>) by adjusting the W/L ratio for the input NMOS pair can be adopted to increase gain of the transistor. For w/l = 20, gain is found to be maximum while all the transistors are maintained in saturation. But, further increasing w/l, pushes the transistors out of saturation. In order to maximize the gain, the drain resistance of the NMOS pair is increased keeping the W/L ratio same. So, the intial W/L measurements are used but the resistance is increased by enhancing the length of the transistors. 
 
 ## Final AC Analysis
 
@@ -91,6 +91,9 @@ AC analysis carried out at ICMR- = 0.8V, Gain ~= 38dB
 ![AC_Plot_ICMR+](https://github.com/user-attachments/assets/5d2b4ac4-eacc-412c-991a-6f5bd3a75c53)
 AC analysis carried out at ICMR+ = 1.6V, Gain ~= 37dB
 
-This gives almost 2dB more gain than the previous configurations. So, this is chosen as the final configuration.
+The Unity Gain Bandwidth(UGF) constraint is satisfied for both the configurations.
 
-**Conclusion**: The desired gain of **70 V/V** is not achieved with this amplifier design. However, a gain of **40 V/V** is realized while meeting the other design parameters.
+This gives almost 6-7dB more gain than the previous configurations. So, this is chosen as the final configuration.
+
+**Conclusion**: The desired gain of **70 V/V** is achieved with this amplifier design. A gain of 79.337 V/V is achieved for ICMR- = 0.8V
+and 69.9 V/V for ICMR+ = 1.6V. Hence, the amplifier design is successful and the specs are met.  

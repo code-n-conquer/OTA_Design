@@ -40,4 +40,4 @@ The **Operational Transconductance Amplifier (OTA) Design Project** focuses on t
 
 1. **Clone the Repository**: Clone the project repository to your local machine using the command:
    ```bash
-   git clone https://github.com/code-n-conquer/OTA-Design-Project.git
+   git clone https://github.com/code-n-conquer/OTA_Design.git
